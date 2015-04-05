@@ -1,13 +1,29 @@
 <html>
+<!-- saved from url=(0014)about:internet -->
+<head>
+<script>
+var timerValue = 59;
+
+function updateTimer()
+{
+    timerValue = timerValue - 1;
+    web_timer.innertext = timerValue;
+    setTimeout(updateTimer, 1000);
+}
+</script>
 <title>
 web timer
 </title>
+</head>
 <body>
-<H1>
+<h1>
 web timer
-</H1>
+</h1>
 <P>
+<span id="web_time" onclick="setTimeout(updateTimer, 1000);">
 59
+
+</span>
 </P>
 </body>
 </html>
